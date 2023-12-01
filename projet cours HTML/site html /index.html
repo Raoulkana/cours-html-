@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- le titre la page -->
+    <title>COURS HTML</title>
+    <!--icone de l'onglet -->
+    <link rel="shortcut icon" href="HTML5-logo.png" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>Texte -Titre H1</h1>
+        <p>
+          Texte basique. <i>voici un texte en italique</i>. <br />
+          <b>et un texte en gras</b>
+        </p>
+      </div>
+    </header>
+    <!--creation photo-->
+    <br />
+    <section>
+      <div>
+        <h2>les photos Titre H2</h2>
+        <img src="photo-Feu. jpeg.jpeg" height="200" alt="image-feu" />
+      </div>
+      <!--creation Liste -->
+      <br />
+
+      <div>
+        <h3>Les listes-Titre H3</h3>
+        <ul>
+          <li>Legume</li>
+          <li>Carotte</li>
+          <li>Fruit</li>
+        </ul>
+        <br />
+        <ol>
+          <li>Boeuf</li>
+          <li>Poulet</li>
+          <li>Porc</li>
+        </ol>
+      </div>
+      <!--Creation de Tableau-->
+      <br />
+
+      <div>
+        <h4><span>&#9758;</span>Les Tableaux Titre H4</h4>
+        <br />
+        <table border="1" width="50">
+          <!--legende-->
+          <caption>
+            <b>Population d'europe et Langue </b>
+          </caption>
+
+          <!--En tete-->
+
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+              <th>Langue</th>
+            </tr>
+          </thead>
+          <!--corps du tableau-->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>66M</td>
+              <td>Français</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+              <td>Allemand</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>47</td>
+              <td>Espagnol</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+<!--creation d'un lien -->
+      <div>
+        <h5>les Liens Titre H5</h5>
+        <a href="https://htmlcheatsheet.com/" target="-blank"
+          >HTML CheatSheet</a
+        >
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >Icones HTML
+        </a>
+      </div>
+      <div>
+        <h6>Video- titre h6</h6>
+        <video src="video.mp4" height="150" autoplay loop muted></video>
+      </div>
+    </section>
+    <br>
+    <section>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+          <label for="name">Nom </label>
+          <input id="name" type="text" placeholder="Entrez votre Nom"><br>
+          <label for="age">Age</label>
+          <input id="age" type="number" min="0" max="99" step="1" value="18"><br>
+          <!--input type select-->
+          <label for="gender">Genre</label>
+          <select id="gender">
+            <option value="homme">HOMME</option>
+            <option selected value="femme">Femme</option>
+          </select><br>
+          <!--input type Radio (NB: Checked)-->
+          <div>
+            <input type="radio" name="type" checked id="humain">
+            <label for="human">humain</label>
+
+            <input type="radio" name="type" id="dog">
+            <label for="dog">chien</label>
+
+            <input type="radio" name="type" id="cat">
+            <label for="cat">chat</label><br>
+            <textarea cols="30" rows="10" placeholder="entrez votre nom ici"></textarea><br>
+            <!--input chexbox-->
+            <label><input type="checkbox"/>accepter les CGV</label><br>
+            <input type="submit" value="valider">
+
+          </div>
+
+        </form>
+    </section>
+    <!--envoie email et envoie de fichier-->
+    <footer>
+        <a href="mailto: raoulkana1992@gmail.com">Ecrivez-moi!</a>
+        <br>
+        <a href="notice.txt" download="non-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
